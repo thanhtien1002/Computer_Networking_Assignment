@@ -1,0 +1,22 @@
+#  Virtual Environment
+venv/
+*.pyc
+*.pyo
+__pycache__/
+*.sqlite3
+
+#  Environment Variables
+.env
+
+#  IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+
+#  Dependencies & Build
+pip-log.txt
+pip-delete-this-directory.txt
+
+#  Logs & Debugging
+logs/
+*.log

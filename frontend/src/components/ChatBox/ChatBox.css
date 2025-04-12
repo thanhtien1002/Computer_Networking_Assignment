@@ -1,0 +1,118 @@
+.chat-box{
+    width: 80%;
+    background-color: #0f0c4e;
+    border-radius: 10px;
+    margin: 1vh;
+    box-shadow: #0000008d -2px 0px 10px 1px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: #2d0d7e;
+    border-radius: 10px 10px 0 0;
+}
+.live{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 5px;
+    gap:5px;
+    border-radius: 50px;
+    background-color: #b99dff;
+    cursor: pointer;
+}
+.live_icon{
+width: 3vh !important;
+height: 3vh !important;
+aspect-ratio: 1/1;
+}
+.chat-infor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.title img{
+    width: 7vh;
+    height: 7vh;
+}
+.chat-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3b48bf;
+    border-radius: 50px;
+    margin: 10px;
+}
+.chat-input input{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: #3b48bf;
+    color: white;
+    font-size: 16px;
+}
+.chat-input button{
+    background-color: #3b48bf;
+    border: none;
+    cursor: pointer;
+}
+.send-icon{
+    width: 4vh;
+    aspect-ratio: 1/1;
+}
+.chat-input input:focus{
+    outline: none;
+}
+.chat-input input::placeholder {
+    color: rgb(198, 188, 188);
+}
+.chat-text-display{
+    height: calc(100% - 70px);
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.s-msg img, .r-msg img{
+    width: 5vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+} 
+.s-msg, .r-msg {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 5px;
+    padding: 0px 15px;
+}
+.r-msg{
+    justify-content: start;
+}
+.msg{
+    color: white;
+    background-color: #8894FF;
+    padding: 8px;
+    max-width: 200px;
+    border-radius: 15px 15px 0px 15px;
+}
+.r-msg .msg{
+    background-color: #B5A8D5;
+    border-radius: 15px 15px 15px 0px;
+}

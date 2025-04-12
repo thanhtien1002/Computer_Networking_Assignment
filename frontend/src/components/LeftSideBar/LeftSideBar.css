@@ -1,0 +1,54 @@
+.left-sidebar {
+    width: 20%;
+    height: 100vh;
+}
+
+.profile{
+    display: flex;
+    flex-direction:row;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #869aff;
+}
+.profile img{
+    width: 8vh;
+    height: 8vh;
+}
+.friend-list{
+    background-color: aqua;
+    height: 90%;
+    margin: 10px;
+    padding: 5px;
+}
+.chat-item{
+    display: flex;
+    flex-direction:row;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+    padding: 5px;
+}
+.chat-item img{
+    width: 5vh;
+    height: 5vh;
+}
+.friend-info span {
+    font-weight: bold;
+}
+.friend-info p {
+    font-weight: 100;
+    font-size: 12px;
+}
+.chat-section{
+    margin: 10px;
+    padding: 10px;
+    background-color: #171441;
+    border-radius: 10px;
+    height: 90%;
+    color: white
+}

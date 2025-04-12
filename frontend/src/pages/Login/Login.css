@@ -1,0 +1,61 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.login-title img {
+    width: 80vh;
+    height: 30vh;
+    object-fit: cover; /* Ensures the image is cropped to fit the container */
+    margin-bottom: 20px;
+}
+.login-input{
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-bottom: 20px;
+}
+.login-input input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #3b90ff;
+    width: 100%;
+    font-size: 16px;
+}
+.changeState-login{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.change-state{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border:none;
+    color:rgb(0, 0, 0);
+    border: solid 1px #506aff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.continue-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #506aff;
+    border: solid 1px #4800ff;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+}
+.use-term{
+    margin: 20px;
+    font-size: 14px;
+    color:rgb(142, 142, 142);
+}

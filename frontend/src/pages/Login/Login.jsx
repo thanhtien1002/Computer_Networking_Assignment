@@ -3,9 +3,11 @@ import { useState } from "react";
 import "./Login.css";
 import logo from "../../assets/images/logo_zoizoi.png";
 import arrow_icon_w from "../../assets/icons/arrow_icon.png";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [currState, setCurrState] = useState("Đăng nhập");
   const onLogin = (event) => {};
+  const navigate = useNavigate();
   const [data, setData] = useState({
     phone: "",
     password: "",
@@ -17,13 +19,17 @@ const Login = () => {
     email: "",
   });
   const onchangeHandler = (event) => {
+    event.preventDefault();
     const name = event.target.name;
     const value = event.target.value;
     setData((data) => ({ ...data, [name]: value }));
   };
-  const handleOnClick = () => {
-    navigate("/chat");
-  }
+  const handleOnClick = (e) => {
+    e.preventDefault(); // Prevent default form behavior
+    navigate("/chat"); // Navigate to chat page regardless of input state
+  };
+  
+  // Import useNavigate from react-router-dom at the top of the file
   return (
     <div className="login">
       <form onSubmit={onLogin} className="login-container">

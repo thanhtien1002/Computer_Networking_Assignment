@@ -1,6 +1,9 @@
 import React from "react";
 import "./LeftSideBar.css";
 import profile from "../../assets/images/profile_img.png";
+import send_icon from "../../assets/images/log_out.png";
+import { useNavigate } from "react-router-dom";
+
 const LeftSideBar = () => {
   const friendlist = [
     {
@@ -34,12 +37,16 @@ const LeftSideBar = () => {
 const truncateMessage = (message, maxLength) => {
     return message.length > maxLength ? message.substring(0, maxLength) + "..." : message;
 };
-
+const navigate = useNavigate();
+const clickLiveHandler = () => {
+    navigate("/");
+}
 return (
     <div className="left-sidebar">
         <div className="profile">
-            <img src={profile} alt="" />
-            Dang Minh Tuan
+            <img src={profile} className="pro5-img" alt="" />
+            <div>Dang Minh Tuan</div>
+            <img onClick={clickLiveHandler} src={send_icon} className="out-icon" alt="" />
         </div>
         <div className="chat-section">
             <div className="group-chats">

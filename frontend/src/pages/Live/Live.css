@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw
+}
+.video-display{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(0, 0, 0); */
+    border: none;
+    border-radius: 8px;
+}
+.video-display video{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.chat-display{
+    width: 25%;
+    height: 90vh; /* Thiết lập chiều cao cố định */
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(68, 19, 216);
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-message {
+    flex-grow: 1;
+    overflow-y: auto; /* Cho phép cuộn khi nội dung vượt quá */
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+.chat-message-item{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color:aqua;
+}
+
+.chat-display input{
+    background-color: aqua;
+    border: none;
+    width: 90%;
+    margin: 5px;
+}
+.input-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-field img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.input-field button{
+ background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+
+}

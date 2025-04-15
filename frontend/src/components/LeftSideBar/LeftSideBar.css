@@ -6,7 +6,7 @@
 .profile{
     display: flex;
     flex-direction:row;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     margin: 10px;
     gap: 10px;
@@ -14,7 +14,7 @@
     border-radius: 10px;
     background-color: #869aff;
 }
-.profile img{
+.pro5-img{
     width: 8vh;
     height: 8vh;
 }
@@ -43,6 +43,11 @@
 .friend-info p {
     font-weight: 100;
     font-size: 12px;
+}
+.out-icon{
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
 }
 .chat-section{
     margin: 10px;

@@ -1,0 +1,30 @@
+{
+    "tracker": {
+        "host": "127.0.0.1",
+        "socket_port": 22236,
+        "flask_port": 5000
+    },
+    "peer": {
+        "default_peer_port": 33357,
+        "default_username": "user1",
+        "default_channel_id": "channel_1",
+        "default_session_id": "session1"
+    },
+    "streaming": {
+        "frame_quality": 80,
+        "frame_rate": 30,
+        "timeout": 3.0,
+        "max_frame_size": 65507
+    },
+    "logging": {
+        "level": "INFO",
+        "max_lines": 10000
+    },
+    "database": {
+        "path": "data/chat.db",
+        "backup_path": "data/backups",
+        "backup_interval": 86400,
+        "max_message_limit": 1000,
+        "connection_timeout": 30
+    }
+} 

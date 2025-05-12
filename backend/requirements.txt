@@ -1,0 +1,5 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+sqlite3
+python-socketio==5.11.2
+passlib[bcrypt]==1.7.4
